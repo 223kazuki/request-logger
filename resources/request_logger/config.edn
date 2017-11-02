@@ -1,0 +1,11 @@
+{:duct.core/project-ns  request-logger
+ :duct.core/environment :production
+
+ :duct.module/logging {}
+ :duct.module.web/api {}
+
+ :duct.module/ataraxy
+ {[] [:ok]}
+
+ :request-logger.handler/ok
+ {}}
