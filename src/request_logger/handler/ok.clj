@@ -21,8 +21,7 @@
         (info "[Uri]           :" (json/write-str uri))
         (info "[Headers]       :" (json/write-str headers))
         (info "[Params]        :" (json/write-str params))
-        (info "[Body]          :" body-str))
+        (info "[Body]          :" body-str)
+        [::response/ok "OK"])
       (catch Exception e
-        (.stackTrace e))
-      (finally
-        [::response/ok "OK"]))))
+        (.stackTrace e)))))
